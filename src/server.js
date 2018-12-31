@@ -1,28 +1,29 @@
-process.env.GRPC_SSL_CIPHER_SUITES =
-  "ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384";
-
 const fs = require("fs");
 const path = require("path");
 const { ApolloServer } = require("apollo-server");
-const lnService = require("ln-service");
-const program = require("commander");
 
-module.exports = async ({ socket, macaroon }) => {
-  const typeDefs = fs.readFileSync(
-    path.join(__dirname, "..", "lightning.graphql"),
-    "utf8"
-  );
+const typeDefs = fs.readFileSync(
+  path.join(__dirname, "..", "lightning.graphql"),
+  "utf8"
+);
+
+module.exports = async ({ socket, macaroon, certificate }) => {
+  if (certificate) {
+    process.env.GRPC_SSL_CIPHER_SUITES = "HIGH+ECDSA";
+  }
+
+  const lnService = require("ln-service");
+  const lnd = lnService.lightningDaemon({
+    socket,
+    macaroon,
+    cert: certificate
+  });
 
   const resolvers = {
     Query: require("./resolvers/Query"),
     Node: require("./resolvers/Node"),
     Channel: require("./resolvers/Channel")
   };
-
-  const lnd = lnService.lightningDaemon({
-    socket,
-    macaroon
-  });
 
   const server = new ApolloServer({
     typeDefs,
