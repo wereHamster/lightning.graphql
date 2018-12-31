@@ -1,0 +1,26 @@
+type Query {
+  node(publicKey: String): Node
+  channel(channelId: String): Channel
+}
+
+type Node {
+  id: ID!
+  publicKey: String
+  alias: String
+  capacity: Int
+  channels: [Channel]
+}
+
+type Channel {
+  id: ID!
+  channelId: String
+  capacity: Int
+
+  port1: Port
+  port2: Port
+}
+
+type Port {
+  node: Node
+  disabled: Boolean
+}
