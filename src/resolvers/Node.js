@@ -20,7 +20,13 @@ exports.channels = async ({ id }, _args, context) => {
         node: {
           id: policy.public_key
         },
-        disabled: policy.is_disabled
+        disabled: policy.is_disabled,
+        forwardingPolicy: {
+          minHTLC: policy.min_htlc_mtokens,
+          baseFee: policy.base_fee_mtokens,
+          feeRate: policy.fee_rate,
+          timeLockDelta: policy.cltv_delta
+        }
       });
 
       return {
