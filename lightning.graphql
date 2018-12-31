@@ -1,5 +1,5 @@
-scalar Satoshi
-scalar MilliSatoshi
+scalar Tokens
+scalar MilliTokens
 
 type Query {
   node(publicKey: String): Node
@@ -10,14 +10,14 @@ type Node {
   id: ID!
   publicKey: String
   alias: String
-  capacity: Satoshi
+  capacity: Tokens
   channels: [Channel]
 }
 
 type Channel {
   id: ID!
   channelId: String
-  capacity: Satoshi
+  capacity: Tokens
 
   port1: Port
   port2: Port
@@ -30,8 +30,8 @@ type Port {
 }
 
 type ForwardingPolicy {
-  minHTLC: MilliSatoshi
-  baseFee: MilliSatoshi
-  feeRate: MilliSatoshi
+  minHTLC: MilliTokens
+  baseFee: MilliTokens
+  feeRate: MilliTokens
   timeLockDelta: Int
 }
