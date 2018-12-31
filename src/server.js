@@ -7,7 +7,7 @@ const typeDefs = fs.readFileSync(
   "utf8"
 );
 
-module.exports = async ({ socket, macaroon, certificate }) => {
+module.exports = async ({ port, socket, macaroon, certificate }) => {
   if (certificate) {
     process.env.GRPC_SSL_CIPHER_SUITES = "HIGH+ECDSA";
   }
@@ -39,7 +39,7 @@ module.exports = async ({ socket, macaroon, certificate }) => {
     }
   });
 
-  server.listen().then(({ url }) => {
+  server.listen({ port }).then(({ url }) => {
     console.log(`Server ready at ${url}`);
   });
 };
