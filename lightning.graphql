@@ -17,6 +17,7 @@ type Node {
 type Channel {
   id: ID!
   channelId: String
+  channelPoint: ChannelPoint
   capacity: Tokens
 
   port1: Port
@@ -34,4 +35,15 @@ type ForwardingPolicy {
   baseFee: MilliTokens
   feeRate: MilliTokens
   timeLockDelta: Int
+}
+
+type ChannelPoint {
+  id: ID!
+  transaction: Transaction
+  outputIndex: Int
+}
+
+type Transaction {
+  id: ID!
+  txid: String
 }
