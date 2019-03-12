@@ -4,7 +4,7 @@ const program = require("commander");
 program
   .version(require("../package.json").version)
   .option("-p, --port [port]", `Port where this server should listen on [4000]`, '4000')
-  .option("-s, --socket [socket]", `Address (host:port) where LND is running`)
+  .option("-s, --socket [socket]", `Address (host:port) where LND is running`, 'localhost:10009')
   .option("-m, --macaroon [path]", `Path to the readonly macaroon`)
   .option("-c, --certificate [path]", `Path to the TLS certificate`);
 
