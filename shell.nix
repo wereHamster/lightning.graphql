@@ -5,6 +5,6 @@ let
 in pkgs.mkShell {
   buildInputs = [
     nodejs
-    pkgs.yarn
+    (pkgs.yarn.override { inherit nodejs; })
   ];
 }
