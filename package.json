@@ -11,7 +11,7 @@
   "dependencies": {
     "apollo-server": "^2.3.1",
     "commander": "^2.19.0",
-    "graphql": "^14.0.2",
+    "graphql": "^14.1.1",
     "ln-service": "^30.2.1"
   }
 }
