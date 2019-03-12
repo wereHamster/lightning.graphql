@@ -10,7 +10,7 @@ Requirements:
 Usage:
 
 ```
-yarn start --macaroon path/to/readonly.macaroon --certificate path/to/tls.pem
+yarn start
 ```
 
-See `yarn start --help` for more options.
+The server will attempt to connect to LND running on localhost:10009 and load the macaroon and certificate from the default location. You can customise these options and more. See `yarn start --help`.
