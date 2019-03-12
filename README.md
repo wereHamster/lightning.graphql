@@ -14,3 +14,7 @@ yarn start
 ```
 
 The server will attempt to connect to LND running on localhost:10009 and load the macaroon and certificate from the default location. You can customise these options and more. See `yarn start --help`.
+
+### Use system trusted roots
+
+Use `--certificate /dev/null` to trust the systemwide certificate roots. This is useful if you are using for example certificates issued by [Let's Encrypt](https://letsencrypt.org/).
