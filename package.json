@@ -5,7 +5,6 @@
   "author": "Tomas Carnecky <tomas.carnecky@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node src/main.js",
     "start": "node src/main.js"
   },
   "dependencies": {
