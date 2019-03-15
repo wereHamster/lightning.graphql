@@ -881,10 +881,10 @@ dns-sync@0.1.3:
     debug "^2"
     shelljs "~0.5"
 
-dotenv@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
-  integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+dotenv@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-7.0.0.tgz#a2be3cd52736673206e8a85fb5210eea29628e7c"
+  integrity sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==
 
 drbg.js@^1.0.1:
   version "1.0.1"
@@ -1541,10 +1541,10 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-ln-service@^34.4.2:
-  version "34.4.2"
-  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-34.4.2.tgz#1008899229bee0097e40a8612f661a4692ca8094"
-  integrity sha512-3b6sYmraB0X9sJQRndhP5c/kJ2oi8cXFMWUs8Csd50ibeDF4MmiBp/I+poJa8qEx0pc9mlYRd1HdaYby7cPwvQ==
+ln-service@^34.5.0:
+  version "34.5.0"
+  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-34.5.0.tgz#3b4e89f8e8a5afffdf055b4ff805712e598bece4"
+  integrity sha512-qJM9kVmMjDUCspTDYLf2++AuejLV9acAV/aQDf2h1Dn1P9L8TIfF6vgSQYZFJcKf16yi8qYoS6MAyNs/lgSb8w==
   dependencies:
     "@datastructures-js/priority-queue" "1.0.2"
     "@grpc/proto-loader" "0.4.0"
@@ -1557,7 +1557,7 @@ ln-service@^34.4.2:
     compression "1.7.3"
     cors "2.8.5"
     dns-sync "0.1.3"
-    dotenv "6.2.0"
+    dotenv "7.0.0"
     express "4.16.4"
     express-basic-auth "1.1.6"
     grpc "1.19.0"
