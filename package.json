@@ -10,7 +10,7 @@
   "dependencies": {
     "apollo-server": "^2.4.8",
     "commander": "^2.19.0",
-    "graphql": "^14.1.1",
+    "graphql": "^14.2.0",
     "ln-service": "^34.4.2"
   }
 }
