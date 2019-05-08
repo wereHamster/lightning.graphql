@@ -8,7 +8,7 @@
     "start": "node src/main.js"
   },
   "dependencies": {
-    "apollo-server": "^2.4.8",
+    "apollo-server": "^2.5.0",
     "commander": "^2.19.0",
     "graphql": "^14.1.1",
     "ln-service": "^34.4.2"
