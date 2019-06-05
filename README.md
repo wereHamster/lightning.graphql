@@ -17,4 +17,4 @@ The server will attempt to connect to LND running on localhost:10009 and load th
 
 ### Use system trusted roots
 
-Use `--certificate /dev/null` to trust the systemwide certificate roots. This is useful if you are using for example certificates issued by [Let's Encrypt](https://letsencrypt.org/).
+Use `--certificate ''` to trust the systemwide certificate roots. This is useful if you are using for example certificates issued by [Let's Encrypt](https://letsencrypt.org/).

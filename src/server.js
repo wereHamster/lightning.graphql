@@ -13,7 +13,7 @@ module.exports = async ({ port, socket, macaroon, certificate }) => {
   }
 
   const lnService = require("ln-service");
-  const lnd = lnService.lightningDaemon({
+  const { lnd } = lnService.authenticatedLndGrpc({
     socket,
     macaroon,
     cert: certificate
