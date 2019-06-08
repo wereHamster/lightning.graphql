@@ -1436,10 +1436,10 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-ln-service@^38.3.8:
-  version "38.3.8"
-  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-38.3.8.tgz#6d8f9e45d3c3769381c169a17e071a0731db2454"
-  integrity sha512-3gtPurLBZIWKUQjk6kq5c+5wK0ap7LsG4euafeAxGuFT6VCObRlzXcjrBCqv8eypYiyo5cUiQkF1zg37HKAT9A==
+ln-service@^38.3.9:
+  version "38.3.9"
+  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-38.3.9.tgz#b0170948b8d293fc33e1cdc721d890274b8c6fb7"
+  integrity sha512-meQLpbBiLn+8+l85VWVFbNvaJAK7Lmc1SOjysIOePWjot6KwziXp793PBMPfOO/RBTOA+f0s2+fVoha/v323pg==
   dependencies:
     "@datastructures-js/priority-queue" "1.0.2"
     "@grpc/proto-loader" "0.5.1"
