@@ -423,15 +423,15 @@ async-retry@^1.2.1:
   dependencies:
     retry "0.12.0"
 
-async@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.0.1.tgz#dfeb34657d1e63c94c0eee424297bf8a2c9a8182"
-  integrity sha512-ZswD8vwPtmBZzbn9xyi8XBQWXH3AvOQ43Za1KWYq7JeycrZuUYzx01KvHcVbXltjqH4y0MWrQ33008uLTqXuDw==
+async@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.1.0.tgz#42b3b12ae1b74927b5217d8c0016baaf62463772"
+  integrity sha512-4vx/aaY6j/j3Lw3fbCHNWP0pPaTCew3F6F3hYyl/tHs/ndmV1q7NW9T5yuJ2XAGwdQrP+6Wu20x06U4APo/iQQ==
 
-asyncjs-util@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/asyncjs-util/-/asyncjs-util-1.0.0.tgz#062d3f0f5c9036b55c5e3ad354b5dffc750d1098"
-  integrity sha512-WNHgzCG8Px3RrYTUDaz78IwNl88jjwWGzNULdMLhkDoUZsA7prFTMvys7GvQqd/kD5xSdny40xjYP1USX3CSWQ==
+asyncjs-util@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/asyncjs-util/-/asyncjs-util-1.1.0.tgz#e1ec5556d3f3dbfaee041eb4779e5aa503e5c341"
+  integrity sha512-B+q49HJsfR5vVQjnYMTeOU9qutI3BTQQiRiPJIfF51+5R0MzRWrXlOn5UE9M+3RuIiXqjkQHkrKoqQAGm6GaXA==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -554,6 +554,11 @@ bn.js@4.11.8, bn.js@^4.11.8, bn.js@^4.4.0:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
 
+bn.js@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.0.0.tgz#5c3d398021b3ddb548c1296a16f857e908f35c70"
+  integrity sha512-bVwDX8AF+72fIUNuARelKAlQUNtPOfG2fRxorbVvFk4zpHbqLrPdOGfVg5vrKwVzLLePqPBiATaOZNELQzmS0A==
+
 body-parser@1.19.0, body-parser@^1.18.3:
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
@@ -570,10 +575,10 @@ body-parser@1.19.0, body-parser@^1.18.3:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bolt07@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/bolt07/-/bolt07-1.4.0.tgz#b53510d0f28d4b18858794e3385f94bb8a7a9562"
-  integrity sha512-siXTIHMznKzzafI9bTbyxWXUjCrGsM8Rgcjd4vTCS8ri2ASd9yJTtGT1PM0Y54GeJ2IJ13P6srS7MYrXp6wTvw==
+bolt07@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/bolt07/-/bolt07-1.4.1.tgz#36112bfd912e7300a0050c894d18356622c1c190"
+  integrity sha512-TRilgQ0XniPhl1/iGW7fm7I93ubnwIe+Bw1LjehZJfSrT2DrpnFg8hNQDUQbiJUOjVtcYYaCb+5DvPLhQG6/KQ==
   dependencies:
     bn.js "4.11.8"
 
@@ -1175,10 +1180,10 @@ graphql@^14.3.1:
   dependencies:
     iterall "^1.2.2"
 
-grpc@1.21.1:
-  version "1.21.1"
-  resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.21.1.tgz#541c0f4bccffcf6aef200536179594633d4579cf"
-  integrity sha512-PFsZQazf62nP05a0xm23mlImMuw5oVlqF/0zakmsdqJgvbABe+d6VThY2PfhqJmWEL/FhQ6QNYsxS5EAM6++7g==
+grpc@1.22.2:
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.22.2.tgz#1a60c728c692a93a85e855e35c2e0216654f0198"
+  integrity sha512-gaK59oAA5/mlOIn+hQO5JROPoAzsaGRpEMcrAayW5WGETS8QScpBoQ+XBxEWAAF0kbeGIELuGRCVEObKS1SLmw==
   dependencies:
     lodash.camelcase "^4.3.0"
     lodash.clone "^4.5.0"
@@ -1405,10 +1410,10 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json2csv@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/json2csv/-/json2csv-4.5.1.tgz#d16d1fa7bea3a8cdddeb500a4eca5d7d2888ecc1"
-  integrity sha512-o90Xa1ziGk3i7AJEO79Jac4+7SEUk58/DxS5mDPW6GF7poX0y7Y0pm1FbWrkz9VzKE4MpUW9aKBOCpJ0U1Ua8A==
+json2csv@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/json2csv/-/json2csv-4.5.2.tgz#75f0808cb89ed8ef7e338445a510a3cd3e385dfe"
+  integrity sha512-Te2Knce3VfLKyurH3AolM6Y781ZE+R3jQ+0YQ0HYLiubyicST/19vML24e1dpScaaEQb+1Q1t5IcGXr6esM9Lw==
   dependencies:
     commander "^2.15.1"
     jsonparse "^1.3.1"
@@ -1436,36 +1441,36 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-ln-service@^38.3.9:
-  version "38.3.9"
-  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-38.3.9.tgz#b0170948b8d293fc33e1cdc721d890274b8c6fb7"
-  integrity sha512-meQLpbBiLn+8+l85VWVFbNvaJAK7Lmc1SOjysIOePWjot6KwziXp793PBMPfOO/RBTOA+f0s2+fVoha/v323pg==
+ln-service@^40.4.1:
+  version "40.4.1"
+  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-40.4.1.tgz#f4d9d08d72d2f14df42083ae8323d17ff1bb9c98"
+  integrity sha512-5cBdVZVxxqINZvyrz12s4ncXuETiDi/W5Nxvk2S1WDplwG0/48aXjWV+7qZvoJkHZ1YZnp8fck24t8t2JSlwRA==
   dependencies:
     "@datastructures-js/priority-queue" "1.0.2"
     "@grpc/proto-loader" "0.5.1"
-    async "3.0.1"
-    asyncjs-util "1.0.0"
+    async "3.1.0"
+    asyncjs-util "1.1.0"
     basicauth-middleware "3.1.0"
     bech32 "1.1.3"
     bitcoinjs-lib "5.0.5"
-    bn.js "4.11.8"
+    bn.js "5.0.0"
     body-parser "1.19.0"
-    bolt07 "1.4.0"
+    bolt07 "1.4.1"
     compression "1.7.4"
     cors "2.8.5"
     dotenv "8.0.0"
     express "4.17.1"
-    grpc "1.21.1"
+    grpc "1.22.2"
     is-base64 "0.1.0"
     is-hex "1.1.3"
-    json2csv "4.5.1"
-    lodash "4.17.11"
+    json2csv "4.5.2"
+    lodash "4.17.14"
     morgan "1.9.1"
     promptly "3.0.3"
     request "2.88.0"
     safe-compare "1.1.4"
     secp256k1 "3.7.1"
-    ws "7.0.0"
+    ws "7.1.0"
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -1487,10 +1492,10 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+lodash@4.17.14:
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 long@^4.0.0:
   version "4.0.0"
@@ -2373,10 +2378,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.0.0.tgz#79351cbc3f784b3c20d0821baf4b4ff809ffbf51"
-  integrity sha512-cknCal4k0EAOrh1SHHPPWWh4qm93g1IuGGGwBjWkXmCG7LsDtL8w9w+YVfaF+KSVwiHQKDIMsSLBVftKf9d1pg==
+ws@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.1.0.tgz#0395646c6fcc3ac56abf61ce1a42039637a6bd98"
+  integrity sha512-Swie2C4fs7CkwlHu1glMePLYJJsWjzhl1vm3ZaLplD0h7OMkZyZ6kLTB/OagiU923bZrPFXuDTeEqaEN4NWG4g==
   dependencies:
     async-limiter "^1.0.0"
 
