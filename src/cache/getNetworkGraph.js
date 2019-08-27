@@ -1,6 +1,8 @@
-const getNetworkGraph = require("ln-service/getNetworkGraph");
+import util from "util";
+import lns from "ln-service";
 
-module.exports = ({ lnd, cache }) => {
+const getNetworkGraph = util.promisify(lns.getNetworkGraph);
+export default ({ lnd, cache }) => {
   if (!cache.graph) {
     console.log(`getNetworkGraph()`);
     cache.graph = getNetworkGraph({ lnd });

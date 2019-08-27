@@ -1,18 +1,20 @@
-const fs = require("fs");
-const path = require("path");
-const { ApolloServer } = require("apollo-server");
+import * as fs from "fs";
+import * as path from "path";
+import ApolloServer from "apollo-server";
 
 const typeDefs = fs.readFileSync(
-  path.join(__dirname, "..", "lightning.graphql"),
+  path
+    .join(path.dirname(import.meta.url), "..", "lightning.graphql")
+    .replace("file:", ""),
   "utf8"
 );
 
-module.exports = async ({ port, socket, macaroon, certificate }) => {
+export default async ({ port, socket, macaroon, certificate }) => {
   if (certificate) {
     process.env.GRPC_SSL_CIPHER_SUITES = "HIGH+ECDSA";
   }
 
-  const lnService = require("ln-service");
+  const lnService = (await import("ln-service")).default;
   const { lnd } = lnService.authenticatedLndGrpc({
     socket,
     macaroon,
@@ -20,12 +22,12 @@ module.exports = async ({ port, socket, macaroon, certificate }) => {
   });
 
   const resolvers = {
-    Query: require("./resolvers/Query"),
-    Node: require("./resolvers/Node"),
-    Channel: require("./resolvers/Channel")
+    Query: (await import("./resolvers/Query.js")),
+    Node: (await import("./resolvers/Node.js")),
+    Channel: (await import("./resolvers/Channel.js"))
   };
 
-  const server = new ApolloServer({
+  const server = new ApolloServer.ApolloServer({
     typeDefs,
     resolvers,
     context: () => {

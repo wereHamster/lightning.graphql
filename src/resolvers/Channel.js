@@ -1,15 +1,15 @@
-const getNetworkGraph = require("../cache/getNetworkGraph");
+import getNetworkGraph from "../cache/getNetworkGraph.js";
 
 const lookupChannel = async (context, id) => {
   const graph = await getNetworkGraph(context);
   return graph.channels.find(c => c.id === id);
 };
 
-exports.channelId = ({ id }) => {
+export const channelId = ({ id }) => {
   return id;
 };
 
-exports.channelPoint = async ({ id }, _args, context) => {
+export const channelPoint = async ({ id }, _args, context) => {
   const c = await lookupChannel(context, id);
   return {
     id: `${c.transaction_id}:${c.transaction_vout}`,
@@ -18,12 +18,12 @@ exports.channelPoint = async ({ id }, _args, context) => {
   };
 };
 
-exports.capacity = async ({ id }, _args, context) => {
+export const capacity = async ({ id }, _args, context) => {
   const c = await lookupChannel(context, id);
   return c.capacity;
 };
 
-exports.port1 = async ({ id }, _args, context) => {
+export const port1 = async ({ id }, _args, context) => {
   const c = await lookupChannel(context, id);
   const policy = c.policies[0];
 
@@ -39,7 +39,7 @@ exports.port1 = async ({ id }, _args, context) => {
   };
 };
 
-exports.port2 = async ({ id }, _args, context) => {
+export const port2 = async ({ id }, _args, context) => {
   const c = await lookupChannel(context, id);
   const policy = c.policies[1];
 

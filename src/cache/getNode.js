@@ -1,6 +1,8 @@
-const getNode = require("ln-service/getNode");
+import util from "util";
+import lns from "ln-service";
 
-module.exports = ({ lnd, cache }, publicKey) => {
+const getNode = util.promisify(lns.getNode);
+export default ({ lnd, cache }, publicKey) => {
   if (!(publicKey in cache.nodeInfo)) {
     console.log(`getNode(${publicKey})`);
     cache.nodeInfo[publicKey] = getNode({ lnd, public_key: publicKey });

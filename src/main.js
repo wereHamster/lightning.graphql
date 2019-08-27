@@ -1,7 +1,8 @@
-const fs = require("fs");
-const program = require("commander");
-const os = require("os");
-const path = require("path");
+import * as fs from "fs";
+import program from "commander";
+import * as os from "os";
+import * as path from "path";
+import pkg from "../package.json";
 
 const loadDefaults = () => {
   const homedir = os.homedir();
@@ -28,15 +29,31 @@ const main = async () => {
   const def = loadDefaults();
 
   program
-    .version(require("../package.json").version)
-    .option( "-p, --port [port]", `Port where this server should listen on [4000]`, "4000")
-    .option( "-s, --socket [socket]", `Address (host:port) where LND is running`, "localhost:10009")
-    .option( "-m, --macaroon [path]", `Path to the readonly macaroon`, def.macaroon)
-    .option( "-c, --certificate [path]", `Path to the TLS certificate`, def.certificate);
+    .version(pkg.version)
+    .option(
+      "-p, --port [port]",
+      `Port where this server should listen on [4000]`,
+      "4000"
+    )
+    .option(
+      "-s, --socket [socket]",
+      `Address (host:port) where LND is running`,
+      "localhost:10009"
+    )
+    .option(
+      "-m, --macaroon [path]",
+      `Path to the readonly macaroon`,
+      def.macaroon
+    )
+    .option(
+      "-c, --certificate [path]",
+      `Path to the TLS certificate`,
+      def.certificate
+    );
 
   program.parse(process.argv);
 
-  require("./server")({
+  (await import("./server.js")).default({
     port: parseInt(program.port, 10),
     socket: program.socket,
     macaroon: fs.readFileSync(program.macaroon).toString("hex"),

@@ -1,16 +1,16 @@
-const getNode = require("../cache/getNode");
-const getNetworkGraph = require("../cache/getNetworkGraph");
+import getNode from "../cache/getNode.js";
+import getNetworkGraph from "../cache/getNetworkGraph.js";
 
-exports.publicKey = async ({ id }) => {
+export const publicKey = async ({ id }) => {
   return id;
 };
 
-exports.alias = async ({ id }, _args, context) => {
+export const alias = async ({ id }, _args, context) => {
   const nodeInfo = await getNode(context, id);
   return nodeInfo.alias;
 };
 
-exports.channels = async ({ id }, _args, context) => {
+export const channels = async ({ id }, _args, context) => {
   const graph = await getNetworkGraph(context);
 
   return graph.channels

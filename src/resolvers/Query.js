@@ -1,7 +1,7 @@
-exports.node = (_, { publicKey }) => {
+export const node = (_, { publicKey }) => {
   return { id: publicKey, publicKey };
 };
 
-exports.channel = (_, { channelId }) => {
+export const channel = (_, { channelId }) => {
   return { id: channelId, channelId };
 };
