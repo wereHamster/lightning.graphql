@@ -19,10 +19,10 @@
   resolved "https://registry.yarnpkg.com/@datastructures-js/priority-queue/-/priority-queue-1.0.2.tgz#3511cb9cd7fb03be057afb7874cd8839d1ac91f8"
   integrity sha512-HrSXJy5QPBn7DyF5ubjR6g88zW4SXDcYf732MKXTwRYf/MSVc8C1oM7UkDpaIc9OoC4r8kwpYa6oWndQZykd1w==
 
-"@grpc/proto-loader@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.5.1.tgz#48492b53cdda353110b51a4b02f465974729c76f"
-  integrity sha512-3y0FhacYAwWvyXshH18eDkUI40wT/uGio7MAegzY8lO5+wVsc19+1A7T0pPptae4kl7bdITL+0cHpnAPmryBjQ==
+"@grpc/proto-loader@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.5.2.tgz#c84f83be962f518bc303ca2d5e6ef2239439786c"
+  integrity sha512-eBKD/FPxQoY1x6QONW2nBd54QUEyzcFP9FenujmoeDPy1rutVSHki1s/wR68F6O1QfCNDx+ayBH1O2CVNMzyyw==
   dependencies:
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
@@ -621,10 +621,10 @@ bitcoin-ops@^1.3.0, bitcoin-ops@^1.4.0:
   resolved "https://registry.yarnpkg.com/bitcoin-ops/-/bitcoin-ops-1.4.1.tgz#e45de620398e22fd4ca6023de43974ff42240278"
   integrity sha512-pef6gxZFztEhaE9RY9HmWVmiIHqCb2OyS4HPKkpc6CIiiOa3Qmuoylxc5P2EkU3w+5eTSifI9SEZC88idAIGow==
 
-bitcoinjs-lib@5.1.4:
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/bitcoinjs-lib/-/bitcoinjs-lib-5.1.4.tgz#9081d9a0fb7a41b451cdeee8adf4af591b92e726"
-  integrity sha512-tSgxnXC3xEXw5DxKGIHNkzz+pxYzsSViT/XfQVIn8vM/b5kXtg3BJuFg6T1h2zhgG+iClzDf+5S/5wxFIddzWg==
+bitcoinjs-lib@5.1.6:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/bitcoinjs-lib/-/bitcoinjs-lib-5.1.6.tgz#0169890fd1e09e5eb335aadd62a61e1fbdf48b46"
+  integrity sha512-NgvnA8XXUuzpuBnVs1plzZvVOYsuont4KPzaGcVIwjktYQbCk1hUkXnt4wujIOBscNsXuu+plVbPYvtMosZI/w==
   dependencies:
     "@types/node" "10.12.18"
     bech32 "^1.1.2"
@@ -1423,10 +1423,10 @@ ipaddr.js@1.9.0:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
   integrity sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
 
-is-base64@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/is-base64/-/is-base64-0.1.0.tgz#a6f20610c6ef4863a51cba32bc0222544b932622"
-  integrity sha512-WRRyllsGXJM7ZN7gPTCCQ/6wNPTRDwiWdPK66l5sJzcU/oOzcIcRRf0Rux8bkpox/1yjt0F6VJRsQOIG2qz5sg==
+is-base64@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-base64/-/is-base64-1.0.0.tgz#0bdda1a758fcfac6d78df8bb95960512bb42db61"
+  integrity sha512-7McBWBgGDHS8OHvCnPVVxl3HdzitV6XyjM1x7vVxbzXIKJUzxphU5MDL986aZ/oKf/Q+j4Vh4m54Fjwi88n75g==
 
 is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
@@ -1531,18 +1531,18 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-ln-service@^43.2.0:
-  version "43.2.0"
-  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-43.2.0.tgz#433edb6b12f0d56d3d33c0c2f4af9f0663a9da7e"
-  integrity sha512-4PnlMtR621brWpYhvGXCB7+U7D/ws+GtgB8dbUWwEGz7m18goHaq5L+13tYPAuVmbRNFU1sa0BZmNqAHtQOaGg==
+ln-service@^45.0.0:
+  version "45.0.0"
+  resolved "https://registry.yarnpkg.com/ln-service/-/ln-service-45.0.0.tgz#f32c0b9d00379fcb6136cc4c3c89b9dc8e34ddd3"
+  integrity sha512-nAKNS/Fm5pvfkAGf5+0FLKcxd1dhIGdRNwunk6XcnnMYHX8fxtOoTsrE+oA778Fd+3trDQq/X09Bnkdvcxr89g==
   dependencies:
     "@datastructures-js/priority-queue" "1.0.2"
-    "@grpc/proto-loader" "0.5.1"
+    "@grpc/proto-loader" "0.5.2"
     async "3.1.0"
     asyncjs-util "1.1.2"
     basicauth-middleware "3.1.0"
     bech32 "1.1.3"
-    bitcoinjs-lib "5.1.4"
+    bitcoinjs-lib "5.1.6"
     bn.js "5.0.0"
     body-parser "1.19.0"
     bolt07 "1.4.3"
@@ -1551,7 +1551,7 @@ ln-service@^43.2.0:
     dotenv "8.1.0"
     express "4.17.1"
     grpc "1.23.3"
-    is-base64 "0.1.0"
+    is-base64 "1.0.0"
     is-hex "1.1.3"
     lodash "4.17.15"
     morgan "1.9.1"
