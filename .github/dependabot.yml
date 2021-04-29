@@ -5,27 +5,3 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: ln-service
-    versions:
-    - 50.11.10
-    - 50.11.11
-    - 50.11.13
-    - 50.11.6
-    - 50.11.9
-    - 51.0.0
-    - 51.1.0
-    - 51.1.1
-    - 51.2.0
-    - 51.3.0
-    - 51.3.1
-    - 51.4.0
-    - 51.5.0
-    - 51.6.0
-  - dependency-name: commander
-    versions:
-    - 7.0.0
-    - 7.1.0
-  - dependency-name: elliptic
-    versions:
-    - 6.5.3
