@@ -12,6 +12,6 @@
     "apollo-server": "^2.14.2",
     "commander": "^3.0.0",
     "graphql": "^15.3.0",
-    "ln-service": "^43.2.0"
+    "ln-service": "^51.8.2"
   }
 }
