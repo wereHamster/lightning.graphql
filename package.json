@@ -9,7 +9,7 @@
     "start": "node --experimental-modules src/main.js"
   },
   "dependencies": {
-    "apollo-server": "^2.14.2",
+    "apollo-server": "^3.10.3",
     "commander": "^3.0.0",
     "graphql": "^15.3.0",
     "ln-service": "^43.2.0"
